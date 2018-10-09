@@ -1,0 +1,37 @@
+doctype html
+html(class="no-js", lang="ru")
+  include ../components/head/head.pug
+  include ../components/theheader/theheader.pug
+  include ../components/about/about.pug
+  include ../components/portfolio/portfolio.pug
+  include ../components/services/services.pug
+  include ../components/video/video.pug
+  include ../components/stages/stages.pug
+  include ../components/contacts/contacts.pug
+  include ../components/reviews/reviews.pug
+  include ../components/thefooter/thefooter.pug
+  head
+    +head(head.defaults)
+  body.page
+    |%=symbols=%
+
+    .wrapper
+      .content
+        header.page-header
+            +theheader
+        main.page-content
+            +about
+            +portfolio
+            +services
+            +video
+            +stages
+            +contacts
+            +reviews
+      footer.page-footer
+        +thefooter
+
+    script(src='%=static=%js/separate-js/svg4everybody.min.js')
+    script svg4everybody();
+
+    //- Main scripts. You can replace it, but I recommend you to leave it here
+    script(src='%=static=%js/main%=hash=%%=min=%.js')

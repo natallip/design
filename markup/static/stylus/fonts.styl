@@ -1,0 +1,127 @@
+/* Your custom fonts here */
+
+/* Example
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../fonts/Custom-Font.eot');
+    src: url('../fonts/Custom-Font.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Custom-Font.woff') format('woff'),
+         url('../fonts/Custom-Font.svg#custom_font') format('svg');
+    font-weight: 400;       // For normal width. It could has another value
+    font-style: normal;     // Also could has another value
+    }
+
+
+// Var for using custom font
+$CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
+*/
+@font-face {
+    font-family: 'PlayfairDisplay-Bold';
+    src: url('../fonts/Playfair_Display/playfairdisplay-bold-webfont.woff2') format('woff2'),
+        url('../fonts/Playfair_Display/playfairdisplay-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-Regular';
+    src: url('../fonts/Playfair_Display/playfairdisplay-regular-webfont.woff2') format('woff2'),
+        url('../fonts/Playfair_Display/playfairdisplay-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway-Bold';
+    src: url('../fonts/Raleway/raleway-bold-webfont.woff2') format('woff2'),
+        url('../fonts/Raleway/raleway-bold-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway-ExtraBold';
+    src: url('../fonts/Raleway/raleway-extrabold-webfont.woff2') format('woff2'),
+        url('../fonts/Raleway/raleway-extrabold-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway-Light';
+    src: url('../fonts/Raleway/raleway-light-webfont.woff2') format('woff2'),
+        url('../fonts/Raleway/raleway-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway-Medium';
+    src: url('../fonts/Raleway/raleway-medium-webfont.woff') format('woff'),
+        url('../fonts/Raleway/raleway-medium-webfont.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: url('../fonts/Raleway/raleway-regular-webfont.woff2') format('woff2'),
+        url('../fonts/Raleway/raleway-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway-SemiBold';
+    src: url('../fonts/Raleway/raleway-semibold-webfont.woff2') format('woff2'),
+        url('../fonts/Raleway/raleway-semibold-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+body {
+  font-size: 16px;
+  //line-height: 19px;
+  font-weight 400
+  font-family: 'Raleway-Light', sans-serif;
+  color: #000;
+  font-style: normal;
+}
+
+*::-webkit-input-placeholder {
+  color #929292
+  font-size: 16px;
+  line-height: 19px;
+  font-weight 300
+
+  opacity: 1;
+}
+
+*:-moz-input-placeholder {
+  color #929292
+  font-size: 16px;
+  line-height: 19px;
+  font-family: 'Roboto', sans-serif;
+  font-weight 300
+
+  opacity: 1;
+}
+
+*::-moz-placeholder {
+  color #929292
+  font-size: 16px;
+  line-height: 19px;
+  font-family: 'Roboto', sans-serif;
+  font-weight 300
+
+  opacity: 1;
+}
+
+*:-ms-input-placeholder {
+  color #929292
+  font-size: 16px;
+  line-height: 19px;
+  font-family: 'Roboto', sans-serif;
+  font-weight 300
+
+  opacity: 1;
+}

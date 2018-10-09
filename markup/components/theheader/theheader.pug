@@ -1,0 +1,39 @@
+mixin theheader(data)
+    .header__bg
+    section.header__content
+        .container
+            .header__content-wrap
+                h1.header__title Дизайн интерьеров
+                .header__text Воплотим в жизнь интерьер, который будет радовать лаконичностью и уютом.
+                .btn.btn--arrow
+                    p Заказать дизайн
+                    .btn__arrow
+                        != pugHelpers.Icon.call(locals, { iconName: 'next', className: 'arrow' })
+    .header__socials.socials.container
+        a(href="#").socials__link
+            != pugHelpers.Icon.call(locals, { iconName: 'vk', className: 'socials__icon' })
+        a(href="#").socials__link
+            != pugHelpers.Icon.call(locals, { iconName: 'instagram', className: 'socials__icon' })
+        a(href="#").socials__link
+            != pugHelpers.Icon.call(locals, { iconName: 'facebook', className: 'socials__icon' })
+
+    .header__top.container
+        .header__logo
+            img.logo(src='%=static=%img/content/logo.png')
+            img.logo-white(src='%=static=%img/content/logo-white.png')
+        .header__phone
+            .header__phone-svg
+                != pugHelpers.Icon.call(locals, {iconName: 'phone1', className: 'header__phone-icon'})
+            .header__phone-numbers +7 (800) 823 48 88
+    .overlay#overlay
+        ul.overlay__menu
+            - for (let i = 0; i < 4; i++)
+                li.overlay__item
+                    a.overlay__link(href='#') Пункт меню
+    .container
+        .header__hamburger
+            .hamburger#hamburger
+                - for (let i = 0; i < 3; i++)
+                    span.line
+    .header__arrow#arrowDown
+        != pugHelpers.Icon.call(locals, {iconName: 'next', className: 'header__arrow-icon'})

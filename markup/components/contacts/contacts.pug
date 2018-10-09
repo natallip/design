@@ -1,0 +1,27 @@
+mixin contacts(data)
+    .contacts
+        .container
+            .contacts__wrap
+                .contacts__title.title Мечтаете об интерьере от BRUME?
+                .contacts__text Оставьте контактные данные, менеджер свяжется с вами в течении 15 минут для уточнения всех деталей.
+                .contacts__form#form
+                    .form__container.form__container--active
+                        label.form__label
+                            |Имя
+                            sup *
+                        input.form__input.form__input--user(type="text", name="name")
+                        != pugHelpers.Icon.call(locals, { iconName: 'user', className: 'form__icon' })
+
+                    .form__container
+                        label.form__label
+                            | Телефон
+                            sup *
+                        input.form__input.form__input--phone(type="phone", name="phone")
+                        != pugHelpers.Icon.call(locals, { iconName: 'phone', className: 'form__icon' })
+                    .form__container
+                        label.form__label E-mail
+                        input.form__input.form__input--user
+                        != pugHelpers.Icon.call(locals, { iconName: 'mail', className: 'form__icon' })
+                    input.btn.form__input--submit(type="submit", value="Отправить")
+                    .form__text Нажимая на кнопку, вы соглашаетесь с условиями обработки персональных данных
+

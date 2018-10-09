@@ -1,0 +1,8 @@
+mixin video(data)
+    .video
+        .video__content
+            img(src='%=static=%img/content/video.jpg')
+        .container.video__wrap
+            .video__btn.btn--circle
+                != pugHelpers.Icon.call(locals, { iconName: 'play', className: 'circle__icon' })
+            .video__text О  студии дизайна интерьеров BRUME за 2 минуты

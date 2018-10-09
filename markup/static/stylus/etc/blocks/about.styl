@@ -1,0 +1,64 @@
+.about-section
+    display: flex
+    margin: 120px auto
+    @media(max-width 1360px)
+        margin: 95px auto 150px
+    @media(max-width 768px)
+        margin: 50px auto 62px
+.about
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin: auto
+    @media(max-width 1360px)
+        flex-wrap: wrap
+        align-items: flex-start
+        justify-content: flex-start
+.about__item
+    flex-basis: 23%
+    height: 50vh
+    display: flex
+    flex-direction: column
+    @media(max-width 1360px)
+        flex-basis: 43%
+        height: auto
+        margin-right: 7%
+        margin-top: -20px
+    @media(max-width 768px)
+        flex-basis: 100%
+        margin-right: 0
+        margin-top: 0
+        margin-bottom: 15px
+
+.about__item&:nth-child(2n)
+    justify-content: flex-end
+    @media(max-width 1360px)
+        margin-top: 21%
+    @media(max-width 768px)
+        margin-top: 0
+
+.about__number
+    color: accentlight
+    font-size: 85px
+    font-family: 'PlayfairDisplay-Bold', sans-serif
+    font-weight: 700
+    margin-bottom: 5px
+.about__title
+    font-family: 'Raleway-SemiBold',sans-serif
+    font-weight: 600
+    font-size: 22px
+    color: blackblue
+    margin-bottom: 20px
+    @media(max-width 1360px)
+        font-size: 24px
+        margin-bottom: 14px
+.about__text
+    font-family: 'Raleway-Light', sans-serif
+    font-weight: 300
+    font-size: 16px
+    line-height: 1.6
+    letter-spacing: 1px
+    color: grey
+    @media(max-width 1360px)
+        font-size: 18px
+        line-height: 1.4

@@ -1,0 +1,84 @@
+.stages
+    margin-bottom: 80px
+    @media(max-width 1360px)
+        margin-bottom: 70px
+.stages__title
+    margin-bottom: 70px
+    @media(max-width 768px)
+        text-align: center
+        margin-bottom: 44px
+.stages__list
+    display: flex
+    flex-wrap wrap
+    justify-content: space-between
+.stages__item
+    flex-basis: 30%
+    margin-bottom: 60px
+    padding-left: 20px
+    @media(max-width 1360px)
+        flex-basis: 50%
+        margin-bottom: 82px
+    @media(max-width 768px)
+        flex-basis: 100%
+        margin-bottom: 44px
+        padding-left: 0
+
+.stages__number
+    width: 20px
+    height: 20px
+    border-radius: 100%
+    background: accentlight
+    flex-shrink: 0
+    text-align: center
+    font-size: 12px
+    line-height: 20px
+    font-weight: 500
+    font-family: 'Raleway-Medium', sans-serif
+    color: blackblue
+    margin-right: 40px
+    margin-top: 3px
+    position: relative
+    @media(max-width 1360px)
+        margin-right: 36px
+    @media(max-width 768px)
+        display: none
+    &::before, &::after
+        content: ''
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        background: transparent
+        border-radius: 100%
+    &::before
+        width: 30px
+        height: 30px
+        border: 1px solid rgba(accentlight, .4)
+    &::after
+        width: 40px
+        height: 40px
+        border: 1px solid rgba(accentlight, .5)
+.stages__item-title
+    color: colortitle
+    font-weight: 600
+    font-size: 22px
+    position: relative
+    padding-bottom: 15px
+    margin-bottom: 18px
+    &::after
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 40px
+        height: 1px
+        background: colortitle
+.stages__text
+    font-family: 'Raleway-Light', sans-serif
+    font-weight: 300
+    font-size: 16px
+    line-height: 1.6
+    color: colortext
+    @media(max-width 768px)
+        font-size: 18px
+        line-height: 25px

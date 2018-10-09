@@ -1,0 +1,15 @@
+mixin thefooter(data)
+    .footer-content.container
+        .footer__copyright BRUME interior, 2017  &#169;
+        .footer__block
+            .footer__logo
+                img(src='%=static=%img/content/logo-white.png')
+
+            .footer__socials.socials
+                a(href="#").socials__link
+                    != pugHelpers.Icon.call(locals, { iconName: 'vk', className: 'socials__icon' })
+                a(href="#").socials__link
+                    != pugHelpers.Icon.call(locals, { iconName: 'instagram', className: 'socials__icon' })
+                a(href="#").socials__link
+                    != pugHelpers.Icon.call(locals, { iconName: 'facebook', className: 'socials__icon' })
+        .footer__copyright HolodnayaDesign

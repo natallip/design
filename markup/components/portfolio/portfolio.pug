@@ -1,0 +1,58 @@
+mixin portfolio(data)
+    .portfolio
+        .container.portfolio__title.title Портфолио
+        .container.portfolio__filter
+            .portfolio__filter-item.portfolio__filter-item--active  Все проекты
+            .portfolio__filter-item Дизайн интерьеров
+            .portfolio__filter-item Отделочные работы
+        .portfolio__slider
+            .slider
+                ul.slider__list
+                    li.slider__item
+                        .slider__img
+                            img(src='%=static=%img/content/portf.jpg')
+                        .slider__btn.btn--circle
+                            != pugHelpers.Icon.call(locals, { iconName: 'add', className: 'circle__icon' })
+                        .slider__item-title Дизайн интерьера гостиной
+                        .slider__item-category Дизайн интерьера
+                    li.slider__item.slider__item--active
+                        .slider__img
+                            img(src='%=static=%img/content/portf1.jpg')
+                        .slider__btn.btn--circle
+                            != pugHelpers.Icon.call(locals, { iconName: 'add', className: 'circle__icon' })
+                        .slider__item-title Дизайн интерьера гостиной в стиле "Модерн"
+                        .slider__item-category Дизайн интерьера
+                    li.slider__item
+                        .slider__img
+                            img(src='%=static=%img/content/portf2.jpg')
+                        .slider__btn.btn--circle
+                            != pugHelpers.Icon.call(locals, { iconName: 'add', className: 'circle__icon' })
+                        .slider__item-title Дизайн столовой в стиле "Бохо"
+                        .slider__item-category Дизайн интерьера
+                    li.slider__item
+                        .slider__img
+                            img(src='%=static=%img/content/portf3.jpg')
+                        .slider__btn.btn--circle
+                            != pugHelpers.Icon.call(locals, { iconName: 'add', className: 'circle__icon' })
+                        .slider__item-title Лофт интерьер для отеля Hiloft
+                        .slider__item-category Дизайн интерьера
+                    li.slider__item
+                        .slider__img
+                            img(src='%=static=%img/content/portf.jpg')
+                        .slider__btn.btn--circle
+                            != pugHelpers.Icon.call(locals, { iconName: 'add', className: 'circle__icon' })
+                        .slider__item-title Дизайн интерьера гостиной
+                        .slider__item-category Дизайн интерьера
+                    li.slider__item.slider__item--active
+                        .slider__img
+                            img(src='%=static=%img/content/portf1.jpg')
+                        .slider__btn.btn--circle
+                            != pugHelpers.Icon.call(locals, { iconName: 'add', className: 'circle__icon' })
+                        .slider__item-title Дизайн интерьера гостиной в стиле "Модерн"
+                        .slider__item-category Дизайн интерьера
+
+                .slider__contrs
+                    .slider__contr.slider__contr--prev
+                        != pugHelpers.Icon.call(locals, { iconName: 'back', className: 'arrow' })
+                    .slider__contr.slider__contr--next
+                        != pugHelpers.Icon.call(locals, { iconName: 'next', className: 'arrow' })
